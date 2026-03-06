@@ -3,6 +3,8 @@ author: 你的名字
 description: 这是我的个人博客
 baseurl: ""
 url: "https://www.liukexin.com"
-remote_theme: pmarsceill/just-the-docs
-nav_enabled: true
+remote_theme: just-the-docs/just-the-docs
+color_scheme: nil        # 或者 dark 试试
+search_enabled: true
 heading_anchors: true
+footer_content: "© 2026 kexin"
