@@ -3,4 +3,9 @@ author: 你的名字
 description: 这是我的个人博客
 baseurl: ""
 url: "https://www.liukexin.com"
-theme: minima
+remote_theme: mmistakes/minimal-mistakes
+# 开启侧边栏
+sidebar:
+  enabled: true
+  position: left  # 侧边栏位置：left/right
+  toc: true       # 自动生成文章目录（侧边栏显示）
