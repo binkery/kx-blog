@@ -3,6 +3,6 @@ author: 你的名字
 description: 这是我的个人博客
 baseurl: ""
 url: "https://www.liukexin.com"
-theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
 nav_enabled: true
 heading_anchors: true
