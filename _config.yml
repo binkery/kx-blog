@@ -3,11 +3,6 @@ author: 你的名字
 description: 这是我的个人博客
 baseurl: ""
 url: "https://www.liukexin.com"
-remote_theme: pmarsceill/just-the-docs
-# 开启侧边栏
-nav_external_links:
-  - title: 我的博客
-    url: /
-    hide_icon: false
-# 侧边栏目录自动生成
-heading_anchors: true
+remote_theme: poole/hyde
+sidebar: true
+theme: "hyde-theme-dark"  # 配色：dark/light/red/blue等
