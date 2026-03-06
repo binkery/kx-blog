@@ -1,7 +1,6 @@
 title: 我的个人网站
 author: 你的名字
-email: 你的邮箱（可选）
 description: 这是我的个人博客
-baseurl: ""
-url: "https://你的GitHub用户名.github.io"
-theme: minima  # 官方极简主题，新手首选
+baseurl: "https://liukexin.com"
+url: "https://binkery.github.io/ke-blog"
+theme: minima 
