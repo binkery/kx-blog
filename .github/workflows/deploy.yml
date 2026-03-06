@@ -1,0 +1,40 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ]  # 你的分支名，一般是main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 拉取仓库代码
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. 安装 Ruby 和 Jekyll 4.x
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      # 3. 创建 Gemfile（指定 Jekyll 4.x）
+      - name: Create Gemfile
+        run: |
+          echo "source 'https://rubygems.org'" > Gemfile
+          echo "gem 'jekyll', '~> 4.3'" >> Gemfile
+          echo "gem 'github-pages', group: :jekyll_plugins" >> Gemfile
+          echo "gem 'jekyll-remote-theme'" >> Gemfile
+          bundle install
+
+      # 4. 编译网站（用 Jekyll 4.x）
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --baseurl ""
+
+      # 5. 部署到 GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site  # 编译后的文件目录
