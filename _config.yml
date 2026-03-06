@@ -1,6 +1,6 @@
 title: 我的个人网站
 author: 你的名字
 description: 这是我的个人博客
-baseurl: "https://liukexin.com"
+baseurl: ""
 url: "https://binkery.github.io/ke-blog"
 theme: minimal
