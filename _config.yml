@@ -3,10 +3,6 @@ author: 你的名字
 description: 这是我的个人博客
 baseurl: ""
 url: "https://www.liukexin.com"
-remote_theme: poole/hyde  # 必须用 remote_theme 指向主题仓库
-permalink: pretty
-
-# Hyde 配色/侧边栏配置（可选，按需改）
-hyde:
-  theme: dark  # 配色：dark/light/red/blue/green/orange/purple/yellow/gray
-  sidebar: true  # 开启侧边栏（默认true）
+theme: just-the-docs
+nav_enabled: true
+heading_anchors: true
