@@ -3,4 +3,4 @@ author: 你的名字
 description: 这是我的个人博客
 baseurl: "https://liukexin.com"
 url: "https://binkery.github.io/ke-blog"
-theme: minima 
+theme: minimal
